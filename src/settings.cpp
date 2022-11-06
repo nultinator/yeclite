@@ -154,7 +154,7 @@ void Settings::saveRestoreTableHeader(QTableView* table, QDialog* d, QString tab
 }
 
 QString Settings::getDefaultServer() {
-    return "https://lightwalletd.ycash.xyz:443/";
+    return "https://lite.ycash.xyz:9067";
 }
 
 void Settings::openAddressInExplorer(QString address) {
@@ -163,7 +163,7 @@ void Settings::openAddressInExplorer(QString address) {
         // For ycash, this is not yet supported
         return;
     } else {
-        url = "https://yec.zcha.in/accounts/" + address;
+        url = "https://yecblockexplorer.com/address/" + address;
     }
     QDesktopServices::openUrl(QUrl(url));
 }
